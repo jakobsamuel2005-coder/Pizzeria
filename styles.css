@@ -1,0 +1,55 @@
+/* Navigaatiopalkin tumma tausta */
+.custom-nav {
+    background-color: #444444; 
+    padding: 15px 20px;
+}
+
+/* Linkkien tyyli (Serif-fontti kuvasi mukaan) */
+.custom-nav .nav-link {
+    color: white !important;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Ruotsin lipun koko ja muotoilu */
+.sweden-flag {
+    width: 35px;
+    height: auto;
+    border-radius: 2px;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.sweden-flag:hover {
+    transform: scale(1.1); /* Pieni suurennus kun hiiri on päällä */
+}
+
+/* Hero-osio (Taustakuva) */
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Images/image\ 12.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px; /* Laskee otsikkoa hieman alaspäin */
+}
+
+/* Otsikko kuvan päällä */
+.hero-title {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+/* Tietoa meistä -otsikko */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
