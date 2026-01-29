@@ -1,47 +1,299 @@
-.custom-nav {
-    background-color: #444444; 
-    padding: 15px 20px;
-}
-.custom-nav .nav-link {
-    color: white !important;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-left: 20px;
-}
-.sweden-flag {
-    width: 35px;
-    height: auto;
-    border-radius: 2px;
-    display: block;
-    transition: transform 0.2s;
+/* Auttaa tilavuuksien kanssa  */
+* { 
+  box-sizing: border-box; 
 }
 
-.sweden-flag:hover {
-    transform: scale(1.1);
-}
-/* Hero-osio (Taustakuva) AI*/
-.hero-section {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('Images/image\ 12.png'); 
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 80px;
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #fff;
 }
 
-/* Otsikko kuvan päällä AI*/
-.hero-title {
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
-    text-align: center;
+h1, h2, h3 { font-family: "Buda", serif; 
 }
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+
+/* Bootstrap  */
+.site.container {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+/* Tausta kuva */
+
+.isokuva {
+  position: relative;
+  width: 100%;
+  height: 100vh;          
+  overflow: hidden;
+  color: #fff;
+}
+
+
+/* Tausta kuva */
+.pizza-kuva {
+  position: absolute;
+  inset: 0;               
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  object-position: center bottom; 
+  z-index: 0;
+}
+
+/* Tausta */
+.isokuva::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+
+/* Navbar tilvauus */
+.top-nav {
+  padding: 0 10px; 
+}
+
+.top-nav{
+  margin-bottom: 30px;
+}
+
+
+.MainTitle {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Navbar linkit*/
+.navbar-nav .nav-link {
+  color: #fff;
+  margin-right: 28px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.navbar-nav .nav-link:hover { 
+color: #ddd; 
+}
+
+
+.content-area {
+ margin-top: 10px;
+ }
+
+
+.liput {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.flag {
+  width: 34px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.flag:hover {
+  transform: scale(1.1);
+}
+.top-nav .navbar {
+  margin-left: auto;
+}
+.navbar-nav {
+  margin-right: -128px;
+}
+
+.tietoaK{
+  width: 100%;
+  height: auto;
+  margin-top: -40px;  
+
+}
+.content-area h1 {
+  margin-bottom: 24px;   
+}
+
+.content-area .col-md-7 {
+  padding-top: 60px;   
+}
+
+.viiva{
+  height: 1px;                  
+  background: #505050;         
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+/*Väli osa */
+
+.valiosa{
+  padding: 40px 0;
+}
+
+.sectionHeading{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.menuHeading{
+  text-align: center;
+  font-size: 44px;
+  margin: 0;
+}
+
+.menuOtsikot{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* Suositut osio*/
+
+.popular-row{ margin-top: 10px; }
+
+.laatikko{
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 14px;
+  height: 100%;
+  background: #fff;
+}
+
+.popular-img{
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* Siirtää pitsa kuvaa oikealle */
+.move-right{
+  transform: translateX(64px);
+}
+
+.popularTitle{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.popularText{
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+
+/* Menu otsikko*/
+.top-inner {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto !important;
+  padding-top: 16px;
+}
+
+.menuOsio{
+  padding: 10px 0;
+}
+
+.menuGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.drinks-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+}
+
+.menuList{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Tekee menusta siistin  */
+.menuList li{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 6px 0;
+  font-size: 18px;
+}
+
+.menu-side-img{
+  width: min(360px, 90%);
+  height: auto;
+  display: inline-block;
+}
+
+.drink-img{
+  width: min(360px, 90%);
+}
+
+/* Toimii puhelimella */
+@media (max-width: 768px){
+  .menuGrid{ grid-template-columns: 1fr; }
+  .drinks-grid{ grid-template-columns: 1fr; }
+  .menuHeading{ font-size: 32px; }
+}
+
+/* YHTEYSTIEDOT */
+
+.contactFooter{
+  margin-top: 60px;
+}
+
+/* Yhteystiedot tausta */
+.yhtTausta{
+  background: #5a5a5a;
+  color: #fff;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 28px 0;
+}
+
+/* Yhteystiedot otsikko */
+.yhtOtsikko{
+  font-family: "Buda", serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.YhteystiedotTeksti{
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Face ja Inst Kuvat */
+.yhtKuvat{
+  display: flex;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.socials{
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
 }
