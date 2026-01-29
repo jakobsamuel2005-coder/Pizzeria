@@ -1,63 +1,283 @@
 <!doctype html>
-<html lang="fi">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hämeen Pizzeria&Kebab</title>
+    <title>HmlPizza</title>
+
+    <!-- Fontit: Buda otsikko/Roboto muut --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Buda:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">  
-</head>
-  <body>
-<!DOCTYPE html>
-<html lang="fi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hämeenlinna Pizza ja Kebab</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
-        <div class="container-fluid">
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#">Pizzat</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kebabit</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Juomat</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Yhteystiedot</a></li>
-                    
-                    <li class="nav-item ms-lg-3">
-                        <a href="svenska.html" class="nav-link p-0">
-                            <img src="Images/sweden.svg" 
-                                 alt="Svenska" 
-                                 class="sweden-flag">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Css -->
+    <link rel="stylesheet" href="tyylit.css">
 
-    <header class="hero-section">
-        <h1 class="hero-title">HÄMEENLINNA PIZZA JA KEBAB</h1>
-    </header>
+    </head>
+    <body>
 
-    <section class="container py-5">
-        <h2 class="section-title">Tietoa meistä</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-    </section>
+    <!-- Suomi/Ruotsi liput ja tausta kuva-->
+    <div class="isokuva">
+    <div class="container site top-inner">
+    <header class="row align-items-center top-nav">
+    <div class="liput">
+    <img src="images/finland.png" class="flag" alt="Finnish">
+    <img src="images/sweden.png" class="flag" alt="Swedish">
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Navbar-->
+    <nav class="col-md-10 navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid justify-content-end pe-0">
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+   aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+ <!-- Linkit -->
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+  <ul class="navbar-nav mb-2 mb-lg-0">
+  <li class="nav-item"><a class="nav-link" href="#">Pizzat</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Kebabit</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Juomat</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Yhteystiedot</a></li>
+  </ul>
+  </div>
+
+  </div>
+  </nav>
+  </header>
+  <!--Pää otsikko -->
+  <h1 class="MainTitle">HÄMEENLINNA PIZZA JA KEBAB</h1>
+  </div>
+
+    <!--Taustakuva-->
+  <img src="images/main.png" class="pizza-kuva" alt="Pizza">
+  </div>    
+  
+    <!--Tietoa meistä osio -->
+    <div class="container site">
+    <main class="row content-area align-items-start">
+    <article class="col-md-7">
+    <h1>Tietoa meistä</h1>
+    <p>
+    Tervetuloa nauttimaan meidän herkullisista annoksista Hämeenlinnan pizza & Kebab ravintolaan.
+    Valikostamme löydät maukkaita pitsoja rapeilla pohjilla, sekä meheviä kebabannoksia. 
+    Tarjoamme rennon ja viihtyisän paikan niin nopealle lounaalle kuin pidemmälle illalliselle ystävien tai perheen kanssa.
+    Nopea palvelu ja reilut annokset takaavat, että lähdet ravintolastamme kylläisenä ja tyytyväisenä joka kerta.
+    </p>
+          
+    </article>
+        <!--tietoa meistä osion kuva -->
+    <div class="col-md-5">
+    <img src="images/pizza1.png" class="tietoaK" alt="">
+    </div>
+    </main>
+    <!--Osion erottava viiva -->
+    <div class="viiva"></div>
+    
+    <!-- Suositut osa -->
+    <section class="valiosa" id="suositut">
+    <div class="container site">
+    <h2 class="sectionHeading">Suositut</h2>
+      <!--Laatikot-->
+    <div class="row g-4 popular-row">
+      <!-- Laatikko 1 -->
+    <div class="col-md-6">
+    <div class="laatikko">
+
+    <!--Kebab kuva/Teksti-->
+    <img src="images/ruutu1.png" class="popular-img" alt="Kebab annos">
+    <h3 class="popularTitle">Talon pitakebab</h3>
+    <p class="popularText">
+     Erityisen maukas ja täyttävä kokonaisuus. Varma suosikki asiakkaiden keskuudessa!
+    </p>
+    </div>
+    </div>
+
+    <!-- Laatikko 2 -->
+    <div class="col-md-6">
+    <div class="laatikko">
+
+    <!-- Pizza kuva/Teksti -->
+    <img src="images/ruutu2.png" class="popular-img move-right" alt="">
+    <h3 class="popularTitle">Pepperoni pizza</h3>
+    <p class="popularText">
+     Erityisen hyvän makuinen ja perusvarma valinta kun tekee pizzaa mieli!
+    </p>
+
+    </div>
+    </div>
+    </div>
+  </div>
+ </section>
+
+<div class="viiva"></div>
+
+<!--MENU otsikko-->
+<section class="section-space" id="menu">
+<div class="container site">
+<h2 class="menuHeading">Menu</h2>
+</div>
+</section>
+
+<!--Pizzat osio-->
+<section class="menuOsio" id="pizzat">
+<div class="container site">
+<h3 class="menuOtsikot">Pizzat</h3>
+
+<!-- Bootstrap grid/css grid menussa oleville pitsoille-->
+<div class="row align-items-start g-4">
+
+<div class="col-md-7">
+<div class="menuGrid">
+
+<ul class="menuList">
+<li><span>Bolognese</span><span>9€</span></li>
+<li><span>Pepperoni</span><span>10€</span></li>
+<li><span>Hawaii</span><span>12€</span></li>
+</ul>
+
+<ul class="menuList">
+<li><span>Kinkku &amp; Aura</span><span>10€</span></li>
+<li><span>Fantasia 4 täytteellä</span><span>16€</span></li>
+<li><span>Fantasia 3 täytteellä</span><span>14€</span></li>
+</ul>
+</div>
+</div>
+
+<!-- Pizza menu kuva -->
+<div class="col-md-5 text-md-end">
+<img src="images/pizza2.png" class="menu-side-img" alt="Pizza">
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- Erotus viiva -->
+<div class="viiva"></div>
+
+<!-- KEBAB menu osio -->
+<section class="menuOsio" id="kebabit">
+<div class="container site">
+<h3 class="menuOtsikot">Kebab &amp; Rullat</h3>
+
+<!-- Bootstrap grid/css grid -->
+<div class="row align-items-start g-4">
+
+<div class="col-md-7">
+<div class="menuGrid">
+
+<ul class="menuList">
+<li><span>Ristikkö perunoilla</span><span>10€</span></li>
+<li><span>Kebab ranskalaisilla</span><span>12€</span></li>
+<li><span>Paahdettu Rullakebab</span><span>10€</span></li>
+</ul>
+
+<ul class="menuList">
+<li><span>Pitakebab</span><span>10€</span></li>
+<li><span>Iskender</span><span>10€</span></li>
+</ul>
+</div>
+</div>
+
+<!--Menu kebab kuva -->
+<div class="col-md-5 text-md-end">
+<img src="images/kebab2.png" class="menu-side-img" alt="Kebab rulla">
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- erotus viiva -->
+<div class="viiva"></div>
+
+<!-- JUOMAT MENU -->
+<section class="menuOsio" id="juomat">
+<div class="container site">
+<h3 class="menuOtsikot">Juomat</h3>
+
+<div class="row align-items-start g-4">
+
+<div class="col-md-7">
+<div class="drinks-grid">
+
+<ul class="menuList">
+<li><span>Coca Cola</span></li>
+<li><span>Fanta</span></li>
+<li><span>Sprite</span></li>
+<li><span>Seven up</span></li>
+</ul>
+
+<ul class="menuList">
+<li><span>Pepsi Max</span></li>
+<li><span>Jaffa</span></li>
+<li><span>Mountain Dew</span></li>
+<li><span>Dr. Pepper</span></li>
+</ul>
+
+<ul class="menuList">
+<li><span>Pienet juomat (0.33)</span><span>2€</span></li>
+<li><span>Isot juomat (1.5)</span><span>4€</span></li>
+</ul>
+
+</div>
+</div>
+
+<!-- Juomat menu kuva -->
+<div class="col-md-5 text-md-end">
+<img src="images/juoma.png" class="menu-side-img drink-img" alt="Juomapullo">
+ 
+</div>
+</div>
+</div>
+</section>
+
+<!--Yhteystiedot osio -->
+<section class="contactFooter" id="yhteystiedot">
+  
+<div class="yhtTausta">
+<div class="container site">
+<div class="row">
+<div class="col-md-6">
+<h3 class="yhtOtsikko">Yhteystiedot</h3>
+
+<p class="YhteystiedotTeksti">
+Puh: +358 4573999820 <br>
+S-posti: Kebab@gmail.com <br>
+Parolatie 99, Hämeenlinna
+</p>
+
+<!--Instagram ja Facebook kuvat-->
+<div class="yhtKuvat">
+<img src="images/insta.png" class="socials" alt="Instagram">
+<img src="images/fbook.png" class="socials" alt="Facebook">
+</div>
+</div>
+
+<div class="col-md-6 text-md-end mt-4 mt-md-0">
+<h3 class="yhtOtsikko">AUKIOLOAJAT</h3>
+
+<p class="YhteystiedotTeksti">
+Ma - Ti Suljettu <br>
+Ke - To 8:00 - 21:00 <br>
+Pe 8:00 - 00:00 <br>
+La  10:00 - 00:00 <br>
+Su 10:00 - 21:00
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
-</html>
-    <h1>Hämeenlinnan Pizza ja Kebab</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
 </html>
